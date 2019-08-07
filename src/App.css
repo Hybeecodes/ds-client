@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Work+Sans&display=swap');
+.form {
+  padding: 2%;
+  width: 50%;
+  margin: auto;
+}
+
+.register-form {
+  padding: 2%;
+  width: 80%;
+  margin: auto;
+}
+
+.story-img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.story-title {
+  font-size: 42px;
+  font-family: 'Work Sans';
+  font-weight: bold;
+}
+
+.user-avatar {
+  width: 100%;
+  margin-bottom: 50%;
+  border: 1px solid #000;
+}
+
+.loginForm {
+  padding-top: 10%;
+}
+
+.menu-option {
+  margin-right: 1%;
+}
+
+.registerForm {
+  padding-top: 10%;
+}
+
+.or {
+  overflow: hidden;
+  text-align: center;
+  padding: 2%;
+}
+
+.or:before,
+.or:after {
+  background-color: #7d7d7d;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.or:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.or:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.red {
+  color: #fc4848; 
+}
+
+.red:hover {
+  color: #fc4848; 
+}
+
+@media screen and (max-width: 992px) {
+  .form {
+    width: 70%;
+  }
+}
+
+.ds-description {
+  height: 100vh;
+  position:relative;
+  background:   url("./assets//images/register-image.jpg")no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: 100%;
+  }
+}
