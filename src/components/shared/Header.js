@@ -5,13 +5,13 @@ import { Navbar, Nav, Form, FormControl} from 'react-bootstrap';
 function Header() {
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="/">
+            <Link to="/">
             <img
                 src={require('../../assets/images/devStoriesLogoNew.png')} width={150}
                 className="d-inline-block align-top"
                 alt="Devstories logo"
             />
-            </Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto"> </Nav>

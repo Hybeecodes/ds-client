@@ -11,6 +11,50 @@
   margin: auto;
 }
 
+.create-story-form {
+  padding: 4%;
+  width: 70%;
+  margin: auto;
+}
+
+.comment {
+  margin-top: 10px;
+}
+
+.comments {
+  padding: 10px;
+  width: 70%;
+}
+
+.story {
+  max-width: 100%;
+  margin: auto;
+}
+
+.story-details {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.card.story {
+  margin-top: 10px;
+}
+
+.tag {
+  margin: 1%;
+}
+
+.story-actions {
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.ds-link:hover {
+  text-decoration: none;
+}
+
 .story-img {
   object-fit: cover;
   height: 400px;
@@ -23,7 +67,7 @@
 }
 
 .user-avatar {
-  width: 100%;
+  width: 50px;
   margin-bottom: 50%;
   border: 1px solid #000;
 }
@@ -37,7 +81,7 @@
 }
 
 .registerForm {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .or {
@@ -89,8 +133,18 @@
   background-position: center center;
 }
 
+
+@media screen and (max-width: 991px) {
+  .story {
+    /* max-width: 80%; */
+  }
+}
+
 @media screen and (max-width: 500px) {
   .form {
     width: 100%;
+  }
+  .story {
+    max-width: 100%;
   }
 }

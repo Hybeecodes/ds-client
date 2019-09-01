@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import { Row, Col, Card, Form, Button } from 'react-bootstrap';
 
 class Register extends Component {
+    state = {
+        username: '',
+        email: '',
+        password: '',
+        confirm_password: '',
+    }
     render() {
         return (
             <div>
@@ -14,7 +20,7 @@ class Register extends Component {
                             <Form>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label>Username</Form.Label>
-                                    <Form.Control type="email" placeholder="devstory user" />
+                                    <Form.Control type="text" placeholder="devstory user" />
                                     <Form.Text className="text-muted error">
                                     We'll never share your email with anyone else.
                                     </Form.Text>
@@ -29,6 +35,11 @@ class Register extends Component {
 
                                 <Form.Group controlId="formBasicPassword">
                                     <Form.Label>Password</Form.Label>
+                                    <Form.Control type="password" placeholder="********" />
+                                </Form.Group>
+
+                                <Form.Group controlId="formBasicPassword">
+                                    <Form.Label>Confirm Password</Form.Label>
                                     <Form.Control type="password" placeholder="********" />
                                 </Form.Group>
                                 <Form.Group controlId="formBasicChecbox">
